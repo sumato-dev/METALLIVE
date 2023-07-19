@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: rgb(43, 43, 170);
+    font-family: 'Poppins', sans-serif;
+}
+
+.corpo1{
+    height: 610px;
+    width: 50%;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+    float: left;
+}
+
+.container {
+    height: 610px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    background-color: rgb(43, 43, 170);
+    display:flex;
+}
+.corpo1{
+    position: relative;
+    animation: open 0.35s linear;
+    text-align: center;
+
+}
+@keyframes open {
+    from {left: -300px; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+}
+
+input[type=text], input[type=password] {
+    align-items: center;
+    width: 50%;
+    padding: 15px;
+    border: 2px outset red;
+    margin: 5px;
+    background: #f1f1f1;
+}
+.logbtn {
+    width: 20%;
+    align-items: center;
+    margin: 5px;
+    color:blue;
+    padding: 10px;
+    float: center;
+}

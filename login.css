@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #c02222;
+    padding: 0px;
+    margin: 0px;
+}
+
+.corpo1{
+    height: 1000px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #fafafa;
+    float: left;
+}
+
+.container {
+    height: 610px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    background-color: #c02222;
+    display:flex;
+}
+.container img{
+    margin-top: 300px;
+}
+.corpo1{
+    position: relative;
+    animation: open 0.35s linear;
+    text-align: center;
+
+}
+@keyframes open {
+    from {left: -300px; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+}
+
+input[type=text], input[type=password] {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    align-items: center;
+    width: 50%;
+    padding: 15px;
+    border: 4px solid #c02222;
+    color:black;
+    margin: 5px;
+    background: #f1f1f1;
+}
+.logbtn {
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+    align-items: center;
+    margin: 5px;
+    color:#fafafa;
+    background-color: #c02222;
+    border: none;
+    font-size: large;
+    padding: 10px;
+    float: center;
+    border-radius: 3px;
+}
+.logbtn:hover{
+    background-color: black;
+}
+a:link{
+    color:#c02222;
+}
+a:visited{
+    color:#c02222
+}

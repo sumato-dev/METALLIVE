@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="INDEX.css">
+<link rel="icon" type="image/x-icon" href="favicon2.ico">
+<title>METALLIVE - Gêneros</title>
+
+<head>
+
+</head>
+
+<header>
+    <a href="INDEX1.html"><img class="logo" src="metallive.png" href="INDEX1.html"></a>
+</header>
+
+<body>
+    <div class="nav">
+        <ul class="topnav">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li class="right" onclick="myFuncion()"><a href="#">Conta</a></li>
+    </div>
+    <div class="dropdown">
+        <div id="myDropdown" class="dropdowncont">
+            <br>
+            <p>Você está conectado(a)!</p>
+            <a href="INDEX.html">Desconectar?</a>
+        </div>
+    </div>
+    </ul>
+<script>
+function myFuncion() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+
+    <div class="titulo">
+        <img src="capatit.gif">
+    </div>
+
+    <div class="leftnav">
+        <a href="bandas.html">Bandas</a>
+        <a class="active" href="#">Gêneros</a>
+    </div>
+
+    <div class="container2">
+        <h2>GÊNEROS</h2>
+        <ul>
+            <li class="colaps"><button>Alternative Metal</button></li>
+            <div class="content">
+                <a href="deftones.html">Deftones</a> <br>
+                <a href="soad.html">System of a Down</a> <br>
+                <a href="tdg.html">Three Days Grace</a>
+            </div>
+            <li class="colaps"><button>Black Metal</button></li>
+            <div class="content">
+                <a href="celticfrost.html">Celtic Frost</a> <br>
+                <a href="emperor.html">Emperor</a>
+            </div>
+            <li class="colaps"><button>Death Metal</button></li>
+            <div class="content">
+                <a href="death.html">Death</a>
+            </div>
+            <li class="colaps"><button>Extreme Metal</button></li>
+            <div class="content">
+                <a href="meshuggah.html">Meshuggah</a> <br>
+            </div>
+            <li class="colaps"><button>Heavy Metal</button></li>
+            <div class="content">
+                <a href="blacksabbath.html">Black Sabbath</a> <br>
+                <a href="dio.html">DIO</a> <br>
+                <a href="ironmaiden.html">Iron Maiden</a> <br>
+                <a href="judaspriest.html">Judas Priest</a> <br>
+                <a href="mercyful.html">Mercyful Fate</a> <br>
+            </div>
+            <li class="colaps"><button>Nu Metal</button></li>
+            <div class="content">
+                <a href="korn.html">Korn</a> <br>
+                <a href="slipknot.html">Slipknot</a>
+            </div>
+            <li class="colaps"><button>Thrash Metal</button></li>
+            <div class="content">
+                <a href="anthrax.html">Anthrax</a> <br>
+                <a href="kreator.html">Kreator</a> <br>
+                <a href="megadeth.html">Megadeth</a> <br>
+                <a href="metallica.html">Metallica</a> <br>
+                <a href="sepultura.html">Sepultura</a> <br>
+                <a href="slayer.html">Slayer</a> <br>
+                <a href="stendencies.html">Suicidal Tendencies</a> <br>
+            </div>
+        </ul>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("colaps");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+
+<footer>
+    <p>Desenvolvido por Thiago Oliveira - Todos os direitos reservados ©</p>
+</footer>
+
+</html>
